@@ -1,0 +1,35 @@
+// All styles for page template
+
+//Page EX
+	
+	//Secção EX
+	// @import "pages/home/inicial/XL";
+	// @import "pages/home/inicial/LG";
+	// @import "pages/home/inicial/MD";
+	// @import "pages/home/inicial/SM";
+	// @import "pages/home/inicial/XS";
+
+body {
+	min-height: 100vh;
+	background-color: #ececec;
+}
+
+.inputs {
+    padding-top: 50px;
+}
+
+.color-block {
+	background-color: #ececec;
+	padding: 15px;
+}
+
+.assinatura {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+#btn-Convert-Html2Image {
+	display: none;
+}
