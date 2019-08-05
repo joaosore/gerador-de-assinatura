@@ -1,35 +1,61 @@
 // All styles for page template
 
 //Page EX
-	
-	//Secção EX
-	// @import "pages/home/inicial/XL";
-	// @import "pages/home/inicial/LG";
-	// @import "pages/home/inicial/MD";
-	// @import "pages/home/inicial/SM";
-	// @import "pages/home/inicial/XS";
+
+//Secção EX
+// @import "pages/home/inicial/XL";
+// @import "pages/home/inicial/LG";
+// @import "pages/home/inicial/MD";
+// @import "pages/home/inicial/SM";
+// @import "pages/home/inicial/XS";
 
 body {
-	min-height: 100vh;
-	background-color: #ececec;
+  min-height: 100vh;
+  background-color: #ececec;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .inputs {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .color-block {
-	background-color: #ececec;
-	padding: 15px;
+  background-color: #ececec;
+  padding: 15px;
 }
 
 .assinatura {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
 #btn-Convert-Html2Image {
-	display: none;
+  display: none;
+}
+
+.btns {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(calc(-100% + 50px));
+  cursor: pointer;
+  &.open {
+    transform: translateX(0);
+    .seta {
+      transform: rotateZ(180deg);
+      right: 25px;
+    }
+  }
+  .seta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    padding-right: 25px;
+  }
 }
